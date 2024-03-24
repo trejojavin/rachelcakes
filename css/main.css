@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.text_primary{ color:var(--primary); }
+.text_black{ color:var(--black); }
+.text_white{ color:var(--white); }
+.text_gray-lighter{ color:var(--gray_lighter); }
+.text_gray-light{ color:var(--gray_light); }
+.text_gray-base{ color:var(--gray_base); }
+.text_gray-dark{ color:var(--gray_dark); }
+.text_gray-darker{ color:var(--gray_darker); }
+
+.bg-primary{ background-color:var(--primary) !important; }
+.bg-black{ background-color:var(--black); }
+.bg-white{ background-color:var(--white); }
+.bg-gray-lighter{ background-color:var(--gray_lighter); }
+.bg-gray-light{ background-color:var(--gray_light); }
+.bg-gray-base{ background-color:var(--gray_base); }
+.bg-gray-dark{ background-color:var(--gray_dark); }
+.bg-gray-darker{ background-color:var(--gray_darker); }
+
+/* Site Wide */
+:root{ 
+    font-size:12px;
+    --primary: #0d4dbb;
+    --primary_alt:#0d4dbb;
+
+    --secondary: #0d4dbb;
+    --secondary_alt: #0d4dbb;
+
+    --gray_lighter:#E0E0E0;
+    --gray_light:#D8D8D8;
+    --gray_base:#6e6e6e;
+    --gray_dark:#525252;
+    --gray_darker:#333333;
+
+    --black:#000000;
+    --white:#ffffff;
+    --highlight_color:#03DAC6;
+
+    --btn_primary:#0d4dbb;
+    --btn_primary_hover:#0d4dbb;
+    
+    --border_color: #D8D8D8;
+
+    --xs_font:.75rem;
+    --sm_font:.9rem;
+    --md_font:1rem;
+    --lg_font:1.25rem;
+    --xl_font:2.5rem;
+
+    --font_sans: "Figtree", sans-serif;
+    --font_serif: "Gilda Display", serif;
+    --font_cursive: "WindSong", cursive;
+}
+    
+body{ font-family: "Figtree", sans-serif; background-color:#fefefe; min-height:100vh; overflow-x: hidden; font-size:1rem;  line-height: 1.1; }
+p{ color:var(--gray_dark); font-size:16px; }
+h1, h2, h3, h4, h5, h6{ font-family: "Gilda Display", serif; }
+
+.type-figtree{ font-family: "Figtree", sans-serif; }
+.type-windsong{ font-family: "WindSong", cursive; }
+.type-gilda{ font-family: "Gilda Display", serif; }
+
+a{ color:var(--gray_darker); }
+a:hover{ color:inherit; text-decoration: underline; }
+.text-underline{ text-decoration: underline; }
+
+.font-xs{ font-size:.9rem; }
+.font-normal{ font-size:1rem; }
+.font-sm{ font-size:1.5rem; }
+.font-md{ font-size:2.5rem; }
+.font-lg{ font-size:3.5rem; }
+.font-xl{ font-size:4.5rem; }
+
+    @media(max-width:992px){
+        .font-md{ font-size:2.25rem; }
+        .font-lg{ font-size:3rem; }
+        .font-xl{ font-size:4rem; }
+    }
+    @media(max-width:768px){
+        .font-xs{ font-size:1rem; }
+        .font-sm{ font-size:1.25rem; }
+        .font-md{ font-size:2rem; }
+        .font-lg{ font-size:2.75rem; }
+        .font-xl{ font-size:3.25rem; }
+    }
+    @media(max-width:576px){
+        .font-md{ font-size:1.75rem; }
+        .font-lg{ font-size:2.25rem; }
+        .font-xl{ font-size:2.25rem; }
+    }
+    @media(max-width:450px){
+        .font-lg{ font-size:1.9rem; }
+        .font-xl{ font-size:2rem; }
+    }
+
+.page-content{ overflow: hidden; }
+.section-title{ font-family: var(--font_serif); text-transform: capitalize; color:var(--gray_darker); font-weight:bold; line-height:1.25; }
+.section-border{ padding-bottom:.25rem; border-bottom:1px solid var(--border_color); margin-bottom: 1.25rem; }
+.section-subtitle{ font-family:var(--font_sans); color:var(--gray_dark); font-weight:bold; text-transform: capitalize; }
+.section-content{ color:var(--gray_dark); }
+.section-margin{ margin-bottom:6rem; }
+    @media(max-width:768px){
+        .section-margin{ margin-bottom:4rem; }
+    }
+
+/* General Classes */
+    .img-fluid{ width:100%; }
+    .bg-accent{ background-color:#fcf9f6; }
+    .section-padding-top{ padding-top:5rem; }
+    .section-padding-bottom{ padding-bottom:5rem; }
+
+/* Type Classes */
+    .title1{ font-family: var(--font_serif); font-size:3rem; }
+    
+    .subtitle1{ font-family: var(--font_sans); font-size:1rem; font-weight:300; text-transform: uppercase; letter-spacing:.5em; }
+
+/* Header */
+header{ min-height:30px; border:1px solid var(--gray_light); display:flex; justify-content:center; justify-content:space-between; align-items:center; }
+.header-logo{ width:100%; max-width:300px; padding:1rem; }
+.menu-toggle{ padding:1rem 1.5rem; text-transform:uppercase; }
+    @media(max-width:768px){
+        header{ padding-bottom:2rem; }  
+        .header-logo{  }
+    }
+
+/* Home: About */
+.shift-subtitle{ display:inline-block; padding:.5rem 1.25rem; transform: translateY(-50%); }
+.highlighted{ color:var(--primary); font-family: "WindSong", cursive; font-size:1.5em; padding-right:.15em; font-weight:normal; white-space: nowrap; }
+.arrow-down{ font-size:1.25rem; transition: transform .3s ease; }
+.arrow-down i{ color:var(--gray_base); transition: transform .3s ease-in-out; }
+.arrow-down:hover i{ transform:translateY(20px); }
+
+/* Home: History/Experience */
+.vert-divider{ position:relative; }
+.vert-divider::before{ content:''; display:block; position:absolute; top:0; left:calc(50% - 4.15%); height:75%; width:2px; background-color:var(--gray_lighter); }
+.xp-title{ font-weight:600; font-size:1.2em; text-transform:uppercase; }
+.xp-location, .xp-date{ color:var(--gray_base); font-size:1rem; text-transform:uppercase; }
+.xp-title ~ .xp-location, .xp-title ~ .xp-date{ padding-left:1em; }
+.xp-title + .xp-date, .xp-location + .xp-date{ margin-left:auto; }
+
+/* Gallery */
+.gallery-img{ aspect-ratio: 1 / 1; width:100%; object-fit: cover; }
+
+
+/* Footer */
+.footer-logo{ max-width: 300px; width:100%;  }
+
+
+
+/* Lightbox styles */
+.lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 9999; text-align: center; justify-content: center; align-items: center; transition: opacity .3s ease; opacity:0; backdrop-filter: blur(4px); }
+
+.lightbox-close{ position: absolute; right: 1.5rem; top: 1rem; opacity: .8; background-color:transparent; border:none; padding:0; cursor:pointer; }
+.lightbox-close svg{ fill:white; width:35px; height:auto; }
+
+.lightbox img { max-width: 90%; max-height: 90%; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); transition: opacity 0.3s ease, transform .3s ease; opacity: 0; transform: scale(0.8); }
+
+.lightbox.lightbox-open{ opacity:1; }
+.lightbox.lightbox-open img{ opacity:1; transform:scale(1); }

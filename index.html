@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AL Project Boiler</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gilda+Display&family=WindSong:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="home">
+    <main class="page-content">
+        <header class="header-wrap">
+            <img src="/images/logo.svg" class="header-logo" alt="Rachel D. Nava's Portfolio">
+            <div class="menu-toggle">
+                <span>Menu</span>
+            </div>
+        </header>
+        
+        <section class="container-fluid px-0">
+            <div class="container mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-12">
+                        <div class="text-center">
+                            <h1 class="subtitle1 bg-white shift-subtitle">About Rachel D Nava</h1>
+                            <p class="title1">I'm a <span class="highlighted">Cake Decorator</span> based in Phoenix, Arizona</p>
+                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus, sint dolor quia expedita temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus, sint dolor quia expedita temporibus?</p>
+                            <a href="#" title="Learn More" class="arrow-down">
+                                <i class="fa-solid fa-arrow-down-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12">
+                    <img src="images/bg-hero.jpg" class="img-fluid" alt="Image of Flowers made of icing">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container-fluid bg-accent section-padding-top section-padding-bottom">
+            <div class="container-lg vert-divider pt-5">
+                <div class="row flex-sm-row flex-column-reverse">
+                    <div class="col-lg-5 col-md-4 col-sm-3 col-12 mb-5">
+                        <img src="images/profile.jpg" class="img-fluid" alt="Image of Rachel D Nava">
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 col-md-7 offset-md-1 col-sm-9 col-12 mb-5">
+                        <div class="mb-5">
+                            <h1 class="subtitle1 mb-3">Professional History</h1>
+                            <p class="title1 mb-4">Seeking to create visually <strong class="highlighted">Stunning Cakes</strong> within a positive environment</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita aspernatur sint, nemo repudiandae beatae vel ex eius inventore laudantium sunt adipisci magnam. Nisi ratione soluta quisquam recusandae impedit mollitia?</p>
+                        </div>
+                        <div class="border-top">
+                            <h1 class="subtitle1 shift-subtitle bg-accent  ps-0">Experience</h1>
+                        </div>
+                        <div class="experience mb-5">
+                            <p class="d-flex align-items-center"><span class="xp-title me-0">Cake Decorator</span> <span class="xp-location md-auto">Safeway Inc.</span> <span class="xp-date">Aug 2020 - present</span></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut facere sapiente quod! Quibusdam vitae possimus harum pariatur eos dolor quis dolore facilis aliquid architecto porro, amet in voluptates illo!</p>
+                        </div>
+                        <div class="experience">
+                            <p class="d-flex align-items-center"><span class="xp-title me-0">Cake Decorator</span> <span class="xp-location md-auto">Freelance Inc.</span> <span class="xp-date">Aug 2019 - present</span></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut facere sapiente quod! Quibusdam vitae possimus harum pariatur eos dolor quis dolore facilis aliquid architecto porro, amet in voluptates illo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid section-padding-top section-padding-bottom">
+            <div class="container-lg">
+                <div class="row gx-0">
+                    <div class="col border-bottom mb-5">
+                        <h1 class="subtitle1 mb-3">Gallery</h1>
+                        <p class="title1 mb-3">My Work</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img onclick="openLightbox(this)" src="images/gallery/cake1.jpg" class="gallery-img" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img onclick="openLightbox(this)" src="images/gallery/cake2.jpg" class="gallery-img" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img onclick="openLightbox(this)" src="images/gallery/cake3.jpg" class="gallery-img" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img onclick="openLightbox(this)" src="images/gallery/cake4.jpg" class="gallery-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+
+    </main>
+    <footer class="container-fluid bg-accent py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="/images/logo.svg" class="footer-logo mb-3" alt="Rachel D Nava Portfolio Logo">
+                    <p class="fs-6 mb-0 text_gray-base">Rachel D Nava's Portfolio © All Rights Reserved. August 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<script>
+
+    const closeToggleHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>`;
+    
+    function openLightbox(image) {
+        // Create lightbox container
+        var lightbox = document.createElement("div");
+        lightbox.classList.add("lightbox");
+        
+        // Create image element
+        var lightboxImage = document.createElement("img");
+        lightboxImage.src = image.src;
+        lightbox.appendChild(lightboxImage);
+        
+        // Create close button element
+        var closeButton = document.createElement("button");
+        closeButton.classList.add('lightbox-close');
+        closeButton.innerHTML = closeToggleHTML;
+        closeButton.onclick = function() {
+            closeLightbox(lightbox);
+        };
+        lightbox.appendChild(closeButton);
+        
+        // Append lightbox container to the body
+        document.body.appendChild(lightbox);
+        
+        // Show lightbox
+        lightbox.style.display = "flex";
+        
+        setTimeout(function() {
+            lightbox.classList.add("lightbox-open");
+        }, 50); // Delay for smooth transition
+        
+        // Close lightbox when clicking outside of the image or close button
+        var closeListener = function(event) {
+            if (event.target === lightbox) {
+                closeLightbox(lightbox);
+            }
+        };
+        
+        lightbox._closeListener = closeListener; // Store reference for removal
+        lightbox.addEventListener("click", closeListener);
+    }
+    
+    
+    function closeLightbox(lightbox) {
+        lightbox.removeEventListener("click", lightbox._closeListener);
+        lightbox.classList.remove("lightbox-open");
+        setTimeout(function() {
+            document.body.removeChild(lightbox);
+        }, 300); // Delay for the duration of the transition
+    }
+    </script>
+</body>
+</html>
