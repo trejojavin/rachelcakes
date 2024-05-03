@@ -1,0 +1,11 @@
+
+/* Lightbox styles */
+.lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 9999; text-align: center; justify-content: center; align-items: center; transition: opacity .3s ease; opacity:0; backdrop-filter: blur(4px); }
+
+.lightbox-close{ position: absolute; right: 1.5rem; top: 1rem; opacity: .8; background-color:transparent; border:none; padding:0; cursor:pointer; }
+.lightbox-close svg{ fill:white; width:35px; height:auto; }
+
+.lightbox img { max-width: 90%; max-height: 90%; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); transition: opacity 0.3s ease, transform .3s ease; opacity: 0; transform: scale(0.8); }
+
+.lightbox.lightbox-open{ opacity:1; }
+.lightbox.lightbox-open img{ opacity:1; transform:scale(1); }

@@ -4,172 +4,261 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Rachel D Nava's Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gilda+Display&family=WindSong:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <title>Home | AL Project Boiler</title>
+    
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&family=Glass+Antiqua&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="css/litebox.css">
+    
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="home">
     <main class="page-content">
-        <header class="header-wrap">
-            <img src="images/header-logo.svg" class="header-logo" alt="Rachel D. Nava's Portfolio">
-           
-        </header>
-        
-        <section class="container-fluid px-0">
-            <div class="container mb-5">
+
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <a class="nav-brand" href="index.html">
+                <img src="/images/logo_white.svg" class="navbar-logo" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="custom-glass fw-normal fs-1 mb-0" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <section id="home" class="container-fluid px-0 section-margin">
+            <div class="container-fluid bg-hero">
+                <video autoplay muted loop class="hero-video">
+                    <source src="videos/bg-hero5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-sm-8 col-10 text-center">
+                            <img data-scroll src="images/whip.png" class="bounce_in hero-fore-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10 col-12">
-                        <div class="text-center">
-                            <h1 class="subtitle1 bg-white shift-subtitle">About Rachel D Nava</h1>
-                            <p class="title1">I'm a <span class="highlighted">Cake Decorator</span> based in Phoenix, Arizona</p>
-                            <p class="mb-5">I'm thrilled to present my portfolio showcasing a delectable array of custom creations. From whimsical wedding cakes to intricately themed masterpieces, each confection is a testament to my passion for turning dreams into edible realities. Dive into my portfolio and discover the sweet magic waiting to tantalize your taste buds and ignite your imagination.</p>
-                            <a href="#experience" title="Read about my experience" class="arrow-down">
-                                <i class="fa-solid fa-arrow-down-long"></i>
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12 text-center">
+                        <div class="position-relative z-1 text-center d-inline-block">
+                            <p data-scroll class="tada animate-delay-1000ms text-primary title-name mb-4">
+                                <span  class="rachel">Rachel</span>
+                                <span  class="delia">Delia</span>
+                                <span  class="nava">Nava</span>
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 color-secondary mb-4">
+                                <li><a href="https://www.instagram.com/cakeforbrains_/" target="_blank" title="View Rachel D. Nava's Instagram" class="social-btn"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                            <p class="mb-4 custom-glass fs-3">I am a phoenix based, cake decorator looking to create stunning cakes within a creative environment.</p>
+                            <a href="#about" title=""  class="thick-button color-secondary">
+                                <span>About Me</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-12">
-                    <img src="images/bg-hero.jpg" class="img-fluid" alt="Image of Flowers made of icing">
-                </div>
-            </div>
         </section>
 
-        <section id="experience" class="container-fluid bg-accent section-padding-top section-padding-bottom">
-            <div class="container-lg vert-divider pt-5">
-                <div class="row flex-md-row flex-column-reverse">
-                    <div class="col-lg-5 col-md-4 col-12 mb-5">
-                        <img src="images/profile.jpg" class="img-fluid" alt="Image of Rachel D Nava">
-                    </div>
-                    <div class="col-lg-6 offset-lg-1 col-md-7 offset-md-1 col-12 mb-5">
-                        <div class="mb-5">
-                            <h1 class="subtitle1 mb-3">Professional History</h1>
-                            <p class="title1 mb-4">Seeking to create visually <strong class="highlighted">Stunning Cakes</strong> within a positive environment</p>
-                            <p>I'm a passionate cake decorator excited to create visually stunning cakes in a positive and welcoming environment. I'm on the lookout for opportunities where I can infuse each cake with creativity and positivity, while contributing to a collaborative and uplifting team atmosphere. Let's bake some memorable moments together!</p>
+        <section id="about" class="container-fluid section-margin px-0 top-curve section-margin">
+            <div class="container-fluid bg-primary-alt bottom-curve-white position-relative z-1">
+                <div class="container-lg">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5 col-md-5 col-sm-10 col-12 mb-md-0 mb-sm-3 mb-5">
+                            <div class="profile-pic">
+                                <img src="/images/strawberries.png" class="profile-strawberries hovering" data-scroll alt="">
+                                <img src="/images/rachel-d-nava.jpg" class="profile-rachel flip_in_y" data-scroll alt="Image of Rachel D. Nava">
+                                <img src="/images/cake.png" class="profile-cake hovering animate-delay-500ms" data-scroll alt="">
+                            </div>
                         </div>
-                        <div class="border-top">
-                            <h1 class="subtitle1 shift-subtitle bg-accent  ps-0">Experience</h1>
-                        </div>
-                        <div class="experience mb-5">
-                            <p class="d-flex align-items-center"><span class="xp-title me-0">Cake Decorator</span> <span class="xp-location md-auto">Safeway Inc.</span> <span class="xp-date">Aug 2020 - present</span></p>
-                            <p>As a cake decorator in a grocery store, I design and decorate cakes to meet customer requests and store standards. I ensure quality, maintain cleanliness, and collaborate with team members to provide excellent service.</p>
-                        </div>
-                        <div class="experience">
-                            <p class="d-flex align-items-center"><span class="xp-title me-0">Cake Decorator</span> <span class="xp-location md-auto">Freelance Inc.</span> <span class="xp-date">Aug 2019 - present</span></p>
-                            <p> I bring creativity and precision to every project, crafting custom cakes that exceed expectations. From initial design to final delivery, I ensure each creation reflects the client's vision and delights taste buds. With a commitment to quality and attention to detail, I deliver unforgettable sweet experiences.</p>
+                        <div class="offset-lg-1 col-md-6 offset-md-1 col-12 mb-md-0 mb-5">
+                            <div class="about-top-offset py-sm-5 py-3">
+                                <h2 class="custom-glass fw-normal fs-1">Seeking to create visually stunning cakes within a positive environment.</h2>
+                                <p class="mb-4 fs-5">I'm a passionate cake decorator excited to create visually stunning cakes in a positive and welcoming environment. I'm on the lookout for opportunities where I can infuse each cake with creativity and positivity, while contributing to a collaborative and uplifting team atmosphere. Let's bake some memorable moments together!</p>
+                                <a href="#gallery" title="View My Work" class="thick-button color-primary">
+                                    <span>View My Work</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid section-padding-top section-padding-bottom">
-            <div class="container-lg">
-                <div class="row gx-0">
-                    <div class="col border-bottom mb-5">
-                        <h1 class="subtitle1 mb-3">Gallery</h1>
-                        <p class="title1 mb-3">My Work</p>
+        <section id="experience" class="container-fluid section-padding-bottom section-padding-top">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-md-start align-items-center flex-md-row flex-column gap-3 text-center text-center">
+                            <div class="title-img">
+                                <img src="/images/cupcake-gif.gif" class="img-fluid flip-x" alt="Image of a cupcake">
+                            </div>
+                            <h2 class="fs-1 custom-glass fw-normal">I'm on the lookout for opportunities where I can infuse each cake with creativity and positivity...</h2>
+                            <div class="title-img d-md-block d-none">
+                                <img src="/images/cupcake-gif.gif" class="img-fluid " alt="Image of a cupcake">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wavy-divider mb-5">
+                    <div class="col-md-6">
+                        <p class="position-title fs-1 custom-glass fw-normal lh-1 text-black">Cake Decorator</p>
+                        <p class="position-date">May 2022 - Present</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-4 fs-5">As a cake decorator in a grocery store, I design and decorate cakes to meet customer requests and store standards. I ensure quality, maintain cleanliness, and collaborate with team members to provide excellent service.</p>
+                        <p class="d-flex justify-content-between align-items-center gap-3 wavy-divider">
+                            <span>Company</span>
+                            <span>Safeway</span>
+                        </p>
+                        <p class="d-flex justify-content-between align-items-center gap-3 wavy-divider">
+                            <span>Location</span>
+                            <span>Phoenix, AZ</span>
+                        </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <img onclick="openLightbox(this)" src="images/gallery/cake1.jpg" class="gallery-img" alt="">
+                    <div class="col-md-6">
+                        <p class="position-title fs-1 custom-glass fw-normal lh-1 text-black">Freelance<br>Cake Decorator</p>
+                        <p class="position-date">May 2022 - Present</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <img onclick="openLightbox(this)" src="images/gallery/cake2.jpg" class="gallery-img" alt="">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <img onclick="openLightbox(this)" src="images/gallery/cake3.jpg" class="gallery-img" alt="">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <img onclick="openLightbox(this)" src="images/gallery/cake4.jpg" class="gallery-img" alt="">
+                    <div class="col-md-6">
+                        <p class="mb-4 fs-5">I bring creativity and precision to every project, crafting custom cakes that exceed expectations. From initial design to final delivery, I ensure each creation reflects the client's vision and delights taste buds. With a commitment to quality and attention to detail, I deliver unforgettable sweet experiences.</p>
+                        <p class="d-flex justify-content-between align-items-center gap-3 wavy-divider">
+                            <span>Location</span>
+                            <span>Phoenix, AZ</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-     
 
-    </main>
-    <footer class="container-fluid bg-accent py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <img src="images/logo.svg" class="footer-logo mb-3" alt="Rachel D Nava Portfolio Logo">
-                    <p class="fs-6 mb-0 text_gray-base">Rachel D Nava's Portfolio © All Rights Reserved. August 2024</p>
+        <section class="container-fluid p-0 position-relative z-1 top-curve-white">
+            <div class="row gx-0">
+                <div class="col-12">
+                    <div class="video-container">
+                        <video autoplay muted loop class="bg-video">
+                            <source src="videos/cake-decorating.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <section id="gallery" class="container-fluid bg-primary-alt py-5">
+            <div class="container-xl">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-md-start align-items-center flex-md-row flex-column gap-3 text-center text-center">
+                            <div class="title-img">
+                                <img src="/images/cake-gif.gif" class="img-fluid flip-x" alt="Image of a cupcake">
+                            </div>
+                            <h2 class="fs-1 custom-glass fw-normal">Indulge in cake delights with my sweet creations gallery!</h2>
+                            <div class="title-img d-md-block d-none">
+                                <img src="/images/cake-gif.gif" class="img-fluid" alt="Image of a cupcake">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="row list-unstyled row-cols-lg-4 row-cols-md-3 row-cols-2 g-3">
+                    <li class="col"><img src="images/gallery/cake1.jpg" onclick="openLightbox(this)" class="gallery-img" alt="Image of Rachel D Nava's Cake"></li>
+                    <li class="col"><img src="images/gallery/cake2.jpg" onclick="openLightbox(this)" class="gallery-img" alt="Image of Rachel D Nava's Cake"></li>
+                    <li class="col"><img src="images/gallery/cake3.jpg" onclick="openLightbox(this)" class="gallery-img" alt="Image of Rachel D Nava's Cake"></li>
+                    <li class="col"><img src="images/gallery/cake4.jpg" onclick="openLightbox(this)" class="gallery-img" alt="Image of Rachel D Nava's Cake"></li>
+                    <li class="col"><img src="images/gallery/cake5.jpg" onclick="openLightbox(this)" class="gallery-img" alt="Image of Rachel D Nava's Cake"></li>
+                    <li class="col"><img src="images/gallery/cake6.jpg" onclick="openLightbox(this)" class="gallery-img" alt="Image of Rachel D Nava's Cake"></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer-wrap container-fluid p-0 curve-top">
+            <div class="container-fluid bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center py-4">
+                            <img src="/images/logo.svg" class="footer-logo mb-4" alt="Image of Rachel D. Nava">
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 color-secondary mb-0">
+                                <li><a href="https://www.instagram.com/cakeforbrains_/" target="_blank" title="View Rachel D. Nava's Instagram" class="social-btn"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-primary pt-5 pb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center text-white">
+                            <p class="text-white fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, consequuntur illum. Optio reiciendis quae explicabo cumque minus voluptatem, est molestiae amet exercitationem quasi obcaecati maiores, voluptas eum enim. Eaque, quaerat?</p>
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center d-flex-wrap gap-5">
+                                <li><a href="#home" title="" class="fs-6 text-white fw-bold text-capitalize">Home</a></li>
+                                <li><a href="#about" title="" class="fs-6 text-white fw-bold text-capitalize">About</a></li>
+                                <li><a href="#experience" title="" class="fs-6 text-white fw-bold text-capitalize">Experience</a></li>
+                                <li><a href="#gallery" title="" class="fs-6 text-white fw-bold text-capitalize">Gallery</a></li>
+                            </ul>
+                            <p class="text-white fs-6 mb-0">Rachel D. Nava's Cake Portfolio © Aug 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<!-- Google Fonts -->
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
-<script>
+<script src="/js/litebox.js"></script>
 
-    const closeToggleHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>`;
-    
-    function openLightbox(image) {
-        // Create lightbox container
-        var lightbox = document.createElement("div");
-        lightbox.classList.add("lightbox");
-        
-        // Create image element
-        var lightboxImage = document.createElement("img");
-        lightboxImage.src = image.src;
-        lightbox.appendChild(lightboxImage);
-        
-        // Create close button element
-        var closeButton = document.createElement("button");
-        closeButton.classList.add('lightbox-close');
-        closeButton.innerHTML = closeToggleHTML;
-        closeButton.onclick = function() {
-            closeLightbox(lightbox);
-        };
-        lightbox.appendChild(closeButton);
-        
-        // Append lightbox container to the body
-        document.body.appendChild(lightbox);
-        
-        // Show lightbox
-        lightbox.style.display = "flex";
-        
-        setTimeout(function() {
-            lightbox.classList.add("lightbox-open");
-        }, 50); // Delay for smooth transition
-        
-        // Close lightbox when clicking outside of the image or close button
-        var closeListener = function(event) {
-            if (event.target === lightbox) {
-                closeLightbox(lightbox);
-            }
-        };
-        
-        lightbox._closeListener = closeListener; // Store reference for removal
-        lightbox.addEventListener("click", closeListener);
-    }
-    
-    
-    function closeLightbox(lightbox) {
-        lightbox.removeEventListener("click", lightbox._closeListener);
-        lightbox.classList.remove("lightbox-open");
-        setTimeout(function() {
-            document.body.removeChild(lightbox);
-        }, 300); // Delay for the duration of the transition
-    }
-    </script>
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script>
+    ScrollOut({
+        once: false
+    });
+  </script>
+
 </body>
 </html>
